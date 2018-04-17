@@ -1,0 +1,198 @@
+.Temperature {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding: 20px;
+}
+
+.loading {
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	color: #999;
+	padding: 50px 0px;
+}
+
+.Temperature .header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+
+.Temperature .back-arrow {
+	cursor: pointer;
+}
+
+.Temperature .switch {
+	border: 1px solid black;
+}
+
+.Temperature .switch .react-switch-handle {
+	border: 1px solid black;
+}
+
+.Temperature .units {
+	display: inline-block;
+	position: relative;
+	bottom: 2px;
+	margin-left: 4px;
+	font-size: 14px;
+}
+
+.Temperature .city-name {
+	font-weight: 500;
+	font-size: 22px;
+	flex: 1;
+	padding-left: 15px;
+}
+
+.Temperature .body {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	padding-top: 30px;
+}
+
+.Temperature .body .date-para, .Temperature .body .main-text {
+	font-weight: 300;
+	color: #555;
+}
+
+.Temperature .body .date-para {
+	font-size: 24px;	
+}
+
+.Temperature .body .main-text {
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.Temperature .body .main,
+.Temperature .body .weather-icon {
+	font-size: 90px;
+	color: #FD796B;
+}
+
+.Temperature .body .todays-temp {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+}
+
+.Temperature .body .weather-icon {
+	margin-left: 40px;
+}
+
+.Temperature .body .whole-day {
+	color: #FD796B;
+	font-weight: 300;
+	margin-left: 40px;
+}
+
+.Temperature .body .whole-day p {
+	text-align: right;
+	clear: both;
+	margin-bottom: 5px;
+}
+
+.Temperature .body .whole-day p .day {
+	float: left;
+	margin-right: 35px;
+}
+
+.Temperature .body .forecast {
+	display: flex;
+	/* flex: 1; */
+	justify-content: space-between;
+	min-height: 50px;
+}
+
+.Temperature .body .forecast .forecast-day {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 300;
+	font-size: 14px;
+	color: #777;
+}
+
+.Temperature .body .forecast .forecast-day i {
+	font-size: 32px;
+	margin: 5px 0;
+}
+
+@media (max-width: 629px) {
+  .Temperature {
+		padding: 10px 15px;
+	}
+	.Temperature .body {
+		padding-top: 20px;
+	}
+	.Temperature .body .date-para {
+		font-size: 20px;
+	}
+	.Temperature .body .main-text {
+		font-size: 18px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	.Temperature .body .main,
+	.Temperature .body .weather-icon {
+		font-size: 60px;
+	}
+	.Temperature .body .weather-icon {
+		margin-left: 15px;
+	}
+	.Temperature .body .todays-temp {
+		margin-bottom: 10px;
+	}
+	.Temperature .body .whole-day {
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	.Temperature .body .forecast .forecast-day i{
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 425px) {
+	.Temperature {
+		padding: 10px;
+	}
+	.Temperature .body {
+		padding-top: 10px;
+	}
+	.Temperature .body .date-para {
+		font-size: 18px;
+	}
+	.Temperature .body .main-text {
+		font-size: 16px;
+		margin-top: 10px;
+		margin-bottom: 5px;
+	}
+	.Temperature .body .main,
+	.Temperature .body .weather-icon {
+		font-size: 60px;
+		margin-bottom: 20px;
+	}
+	.Temperature .body .weather-icon {
+		margin-left: 15px;
+	}
+	.Temperature .body .todays-temp {
+		margin-bottom: 10px;
+		flex-direction: column;
+	}
+	.Temperature .body .whole-day {
+		margin-left: 20px;
+		font-size: 14px;
+	}
+	.Temperature .body .forecast .forecast-day{
+		font-size: 10px;		
+	}
+}
